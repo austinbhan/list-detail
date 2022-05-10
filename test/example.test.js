@@ -8,7 +8,7 @@ const test = QUnit.test;
 test('Vegetable Function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<div id = "Carrot"><img src = ".assets/carrot.jpg"><h2>Say hi to Carrot. They're Orange and cost $1</h2></div>`;
+    const expected = `<div id="carrot"><img src="./assets/carrot.jpg"><p>Say hi to carrot. They're Orange and cost $1.</p></div>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
