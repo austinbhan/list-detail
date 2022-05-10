@@ -5,6 +5,7 @@
     flex-direction: column;
     max-width: 300px;
     align-items: center;
+    background-color: lightgrey;
 }
 
 #tomato {
@@ -12,6 +13,7 @@
     flex-direction: column;
     max-width: 300px;
     align-items: center;
+    background-color: lightgreen;
 }
 
 #potato {
@@ -19,6 +21,7 @@
     flex-direction: column;
     max-width: 300px;
     align-items: center;
+    background-color: lightcoral;
 }
 
 #beet {
@@ -26,15 +29,20 @@
     flex-direction: column;
     max-width: 300px;
     align-items: center;
+    background-color: lightblue;
 }
 
 .size {
     max-width: 100px;
     max-height: 100px;
-    align-items: right;
 }
 
 .text
     {width: 200px;
     align-items: center;
 }
+
+.sizing {display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;}

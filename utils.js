@@ -11,7 +11,11 @@ export function renderVegetable(vegetable) {
     p.classList.add('text');
     p.textContent = `Say hi to ${vegetable.name}. They're ${vegetable.color} and cost ${vegetable.price}.`;
 
-    div.append(img, p);
+    const a = document.createElement('a');
+    a.href = 'https://www.google.com'; 
+
+    a.append(img, p);
+    div.append(a);
 
     return div;
 }
