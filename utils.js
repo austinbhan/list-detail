@@ -8,7 +8,6 @@ export function renderVegetable(vegetable) {
     img.classList.add('size');
 
     const p = document.createElement('p');
-    p.classList.add('text');
     p.textContent = `Say hi to ${vegetable.name}. They're ${vegetable.color} and cost ${vegetable.price}.`;
 
     const a = document.createElement('a');
