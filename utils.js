@@ -11,10 +11,19 @@ export function renderVegetable(vegetable) {
     p.textContent = `Say hi to ${vegetable.name}. They're ${vegetable.color} and cost ${vegetable.price}.`;
 
     const a = document.createElement('a');
-    a.href = 'https://www.google.com'; 
+    a.href = `./vegetable-page/?id=${vegetable.id}`; 
 
     a.append(img, p);
     div.append(a);
 
     return div;
+}
+
+export function findById(id, arr) {
+
+    for (let item of arr) {
+        if (id === item.id) {
+            return item;
+        }
+    }
 }

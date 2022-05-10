@@ -15,8 +15,6 @@ function renderVegetables() {
 
 vegetableSection.append(renderVegetables());
 
-
-
 // let state
 
 // set event listeners 
