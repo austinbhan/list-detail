@@ -8,7 +8,6 @@ console.log('Your JS is fully functional');
 const params = new URLSearchParams(window.location.search);
 
 const vegetable = findById(params.get('id'), vegetables); 
-console.log(params.get('id'), 'hi');
 console.log(vegetable);
 
 // create element in vegetable detail index, then pull into vegetable-page.js,
@@ -16,3 +15,9 @@ console.log(vegetable);
 const hi = document.getElementById('hi');
 hi.textContent = vegetable.name;
 
+const img = document.createElement('img');
+img.src = `../assets/${vegetable.name}.jpg`;
+
+hi.append(img);
+
+console.log(vegetable.image);
