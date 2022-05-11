@@ -1,38 +1,26 @@
 /* add home page styles here */
 
 #carrot {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    align-items: center;
     background-color: lightgrey;
 }
 
 #tomato {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    align-items: center;
     background-color: lightgreen;
 }
 
 #potato {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    align-items: center;
     background-color: lightcoral;
 }
 
 #beet {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    align-items: center;
     background-color: lightblue;
 }
 
 .size {
     max-width: 100px;
     max-height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
