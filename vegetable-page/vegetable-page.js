@@ -6,12 +6,13 @@ import { vegetables } from '../vegetables.js';
 console.log('Your JS is fully functional');
 
 const params = new URLSearchParams(window.location.search);
-console.log(params.get('id'));
 
-const veggieName = findById(params.get('id'), vegetables);
+const vegetable = findById(params.get('id'), vegetables); 
+console.log(params.get('id'), 'hi');
+console.log(vegetable);
 
+// create element in vegetable detail index, then pull into vegetable-page.js,
+// and then target key value inside of the array.
+const hi = document.getElementById('hi');
+hi.textContent = vegetable.name;
 
-const vegetableDiv = document.getElementById('vegetable-div');
-vegetableDiv.textContent = veggieName;
-
-console.log(vegetables[0]);

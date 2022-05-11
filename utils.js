@@ -19,11 +19,6 @@ export function renderVegetable(vegetable) {
     return div;
 }
 
-export function findById(id, arr) {
-
-    for (let item of arr) {
-        if (id === item.id) {
-            return item;
-        }
-    }
+export function findById(id, veg) {
+    return veg.find((booger) => booger.id === id);
 }
